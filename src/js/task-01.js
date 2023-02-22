@@ -3,12 +3,13 @@ const ulCategories = document.querySelectorAll('.item')
 console.log(`Number of categories: ${ulCategories.length}`);
 
 const numberandtextCategories = ulCategories.forEach(element => {
+    
 //Element.
-    const numberofLiCategories = element.querySelectorAll('ul li');
     const textOfulCategories = element.firstElementChild;
-
     console.log(`Category: ${textOfulCategories.textContent}`);
-    console.log(`Elements: ${numberofLiCategories.length}`);
+
+    const numberofLiCategories = element.lastElementChild;
+    console.log(`Elements: ${numberofLiCategories.children.length}`);
 });
 
 
