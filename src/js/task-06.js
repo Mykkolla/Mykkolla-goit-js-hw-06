@@ -1,9 +1,9 @@
 const imputObject = document.querySelector('#validation-input');
 
 
-imputObject.addEventListener('blur', lengthImputvalid)
+imputObject.addEventListener('blur', handlerlengthImputvalid)
 
-function lengthImputvalid (event)  {
+function handlerlengthImputvalid (event)  {
   if(Number(imputObject.dataset.length) === event.currentTarget.value.length) {
     imputObject.classList.add('valid');
     imputObject.classList.remove('invalid');
