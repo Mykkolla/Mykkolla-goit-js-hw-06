@@ -17,6 +17,10 @@ function OnFormsub(elemen) {
         alert('Всі поля повинні бути заповнені');
     }
     else {
+//     const FormDat = {
+//         formElementsemail, formElementspassword
+//     }
+// console.log(FormDat)
         NewObj[formElements.email.name] = formElementsemail;
         NewObj[formElements.password.name] = formElementspassword;
         
