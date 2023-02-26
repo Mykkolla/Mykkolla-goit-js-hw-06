@@ -13,7 +13,7 @@ function OnFormsub(elemen) {
     const formElementsemail = formElements.email.value;
     const formElementspassword = formElements.password.value;
     
-    if (formElementsemail === '' && formElementspassword === '') {
+    if (formElementsemail === '' || formElementspassword === '') {
         alert('Всі поля повинні бути заповнені');
     }
     else {

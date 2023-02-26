@@ -25,9 +25,8 @@ const handleCreatAr = () => {
 }
 
 function destroyBox() {
-
   while (Boxes.firstChild) {
-    Boxes.removeChild(Boxes.firstChild);
+    Boxes.innerHTML ='';
   }
 }
 
